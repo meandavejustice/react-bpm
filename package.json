@@ -1,0 +1,29 @@
+{
+  "name": "react-bpm",
+  "version": "1.0.0",
+  "description": "``` javascript /*  * USAGE:  *  *   <BPMTap onChange={func: called on bpm update}  *           bpm={int: initial bpm(optional) Default 120}  *           keyTrigger={string: key to trigger tick event (optional) Default '<space>'}  *           width={int or string: canvas width(optional)}  *           height={int or string: canvas height(optional)} />  *  * */  ``` This component uses [vkey](https://npm.im/package/vkey) for keymappings.",
+  "main": ".#index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "react": "^0.13.0",
+    "babel": "^4.7.12",
+    "babelify": "^5.0.4",
+    "vkey": "^1.0.0",
+    "bpm": "^0.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "author": "",
+  "license": "ISC"
+}
